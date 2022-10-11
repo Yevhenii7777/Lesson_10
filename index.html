@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/icons/imgonline-com-ua-favicon-Fq8RB0gIXq8j.ico" type="image/x-icon">
 	<title>Lesson 10</title>
 </head>
 
@@ -108,14 +109,14 @@
 			- можливість використання CSS-властивостей, які впливають на оточення, фактично для БЕМ-блоку (БЕМ-елемент в ролі модифікатора)
 			- паралельне відокремлення певної структури в БЕМ-блок
 		-->
-	<div class="about-us">
+	<!-- <div class="about-us">
 		<div class="about-us__container">
 			<div class="about-us__body">
-				<div class="about-us__column">
-					<!-- БЕМ-елемент БЕМ-блоку "about-us" -->
-					<!-- А також це окремий незалежний БЕМ-блок "item" -->
-					<!-- Це мікс -->
-					<div class="about-us__item item">
+				<div class="about-us__column"> -->
+	<!-- БЕМ-елемент БЕМ-блоку "about-us" -->
+	<!-- А також це окремий незалежний БЕМ-блок "item" -->
+	<!-- Це мікс -->
+	<!-- <div class="about-us__item item">
 						<div class="item__body">
 							<div class="item__column">Я текст :(</div>
 						</div>
@@ -131,71 +132,66 @@
 				<div class="item__column"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
 	<!-- Приклади (практика) -->
 
 	<!-- НЕ ВІРНО -->
 	<!-- БЕМ-блок -->
-	<div class="text">
-		<!-- БЕМ-блок -->
-		<!-- спроба ієрархїї -->
-		<div class="text-item"></div>
-	</div>
+	<!-- <div class="text"> -->
+	<!-- БЕМ-блок -->
+	<!-- спроба ієрархїї -->
+	<!-- <div class="text-item"></div>
+	</div> -->
 
 	<!-- ВІРНО -->
+	<!-- 
 	<div class="text-about"></div>
-	<a href="" class="button"></a>
+	<a href="" class="button"></a> -->
 
 	<!-- ВІРНО -->
-	<a href="" class="button">
-		<div class="item"></div>
+	<!-- <a href="" class="button">
+		<div class="item"></div> -->
 	</a>
 
 	<!-- НЕ ВІРНО -->
-	<div class="contacts">
+	<!-- <div class="contacts">
 		<div class="contacts__items">
 			<div class="contacts__item"></div>
-		</div>
-		<div class="item">
-			<div class="item__title"></div>
-			<!-- БЕМ-елемент не у своєму БЕМ-блоці -->
-			<div class="contacts__text"></div>
-		</div>
+		</div> -->
+	<!-- <div class="item">
+			<div class="item__title"></div> -->
+	<!-- БЕМ-елемент не у своєму БЕМ-блоці -->
+	<!-- <div class="contacts__text"></div> -->
+	<!-- </div> -->
 	</div>
 
 	<!-- НЕ ВІРНО -->
-	<div class="article">
+	<!-- <div class="article">
 		<div class="article__title"></div>
 		<div class="article__text"></div>
-	</div>
+	</div> -->
 	<!-- БЕМ-елемент не у своєму БЕМ-блоці -->
-	<div class="article__body">
+	<!-- <div class="article__body">
 		<div class="article__column"></div>
-	</div>
+	</div> -->
 
 
 	<!-- Приклад з макету -->
 
 	<div class="article">
-		<div class="article__container">
-			<h1 class="article__title">HR statistics: job search, interviews, hiring and recruiting</h1>
-			<div class="article__image">
-				<img src="" alt="">
+		<div class="article__container"> 
+			<div class="article__post-header">
+				<h1 class="article__title title">HR statistics: job search, interviews, hiring and recruiting</h1> <!-- тут спробував використати мікс оскільки аналогічний заголовок буде використовуватись на 2-й сторінці одного проекту -->
 			</div>
 			<div class="article__image">
-				<img src="" alt="">
+				<img src="img/article/image.jpg" alt="Гішпанський встид. Десь, картинка поділась">
 			</div>
 			<div class="article__main-text">
 				<p>Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. </p>
 			</div>
 			<div class="article__text">
-				<h2></h2>
-				<h3></h3>
-				<h4></h4>
-				<h5></h5>
-				<h6></h6>
 				<p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
 				<p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
 				<p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
@@ -209,12 +205,15 @@
 					<li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
 					<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
 				</ul>
-				<p>Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
+				<p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
 			</div>
+
+
 		</div>
 	</div>
-
-	<ul class="list">
+	<div class="next-page"><a target="_blank" href="index2.html" class="next-page__link" title="next page"><br><br> NEXT PAGE</a></div>
+	<!-- Ще приклади -->
+	<!-- <ul class="list">
 		<li class="list__item">
 			<a href="" class="list__link"></a>
 		</li>
@@ -274,7 +273,7 @@
 		<p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta eveniet, possimus obcaecati reiciendis natus provident consectetur distinctio quis? Tempore perspiciatis qui odit sed aliquid esse assumenda sit fugiat sint.</p>
 		<p>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta eveniet, possimus obcaecati reiciendis natus provident consectetur distinctio quis? Tempore perspiciatis qui odit sed aliquid esse assumenda sit fugiat sint.</p>
 		<p>6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta eveniet, possimus obcaecati reiciendis natus provident consectetur distinctio quis? Tempore perspiciatis qui odit sed aliquid esse assumenda sit fugiat sint.</p>
-	</div>
+	</div> -->
 
 
 
